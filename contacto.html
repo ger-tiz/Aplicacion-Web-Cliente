@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GitSport</title>
+</head>
+<body>
+    <h1>Contacto - GitSport</h1>
+    <p>¿Tenés alguna consulta? Completá el formulario y te contactaremos.</p>
+    
+    <p><strong>Dirección:</strong> Av. Siempreviva 123, Ciudad de Mendoza</p>
+    <p><strong>Teléfono:</strong> +54 261 774 2648</p>
+
+    <form action="#" method="POST">
+        <p><label for="nombre">Nombre completo:</label></p>
+        <p><input type="text" id="nombre" name="nombre" required></p>
+
+        <p><label for="email">Email:</label></p>
+        <p><input type="email" id="email" name="email" required></p>
+
+        <p><label for="telefono">Teléfono:</label></p>
+        <p><input type="tel" id="telefono" name="telefono"></p>
+
+        <p><label for="motivo">Motivo de contacto:</label></p>
+        <p>
+            <select id="motivo" name="motivo" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="consulta">Consulta sobre productos</option>
+                <option value="pedido">Realizar un pedido</option>
+                <option value="talla">Consulta de talles</option>
+                <option value="envio">Información de envío</option>
+                <option value="cambio">Cambios y devoluciones</option>
+                <option value="otro">Otro motivo</option>
+            </select>
+        </p>
+
+        <p><label for="categoria">Categoría de interés:</label></p>
+        <p>
+            <select id="categoria" name="categoria">
+                <option value="">Seleccioná una categoría</option>
+                <option value="running">Running</option>
+                <option value="fitness">Fitness/Gym</option>
+                <option value="equipo">Deportes de Equipo</option>
+                <option value="hombres">Hombres</option>
+                <option value="mujeres">Mujeres</option>
+                <option value="ninos">Niños</option>
+            </select>
+        </p>
+
+        <p><label for="mensaje">Mensaje:</label></p>
+        <p><textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta..." required></textarea></p>
+        <p><label for="mensaje">Quejas o sugerencias:</label></p>
+        <p><textarea id="mensaje" name="mensaje" placeholder="Si tenés alguna sugerencia o queja, no dejes de escribirnos." required></textarea></p>
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</body>
+</html>
